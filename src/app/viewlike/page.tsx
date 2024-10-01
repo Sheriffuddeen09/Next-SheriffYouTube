@@ -1,7 +1,7 @@
-import Navbar from "./homepage/components/Navbar";
-import Footer from "./homepage/components/Footer";
-import HomePage from "./homepage/home/Home";
-import SideHomepage from "./homepage/home/SideHompage";
+import Navbar from "../homepage/components/Navbar";
+import Footer from "../homepage/components/Footer";
+import HomeViewLike from "./HomeLike";
+import SideHomepage from "../homepage/home/SideHompage";
 
 export const revalidate = 1
 
@@ -10,13 +10,11 @@ export default async function page() {
     <section>
     <Navbar />
     <section className="min-h-screen text-base">
-      <div className="flex p-3 flex-row gap-16 ">
+    <div className="flex px-4 py-3 flex-row gap-10 ">
         <div className="hidden sm:block">
         <SideHomepage />
         </div>
-        <HomePage />
-        <div>
-        </div>
+        <HomeViewLike />
       </div>
       <div className="sm:hidden block">
     <Footer />

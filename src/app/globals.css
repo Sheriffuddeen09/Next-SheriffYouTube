@@ -2,26 +2,167 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+:root{
+    --body_background: white;
+    --body_color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+[dark-theme="dark"]{
+    --body_background: #17191c;
+    --body_color: white;
 }
+
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: rgb(13, 13, 13);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+.section-bg{
+  background-color: rgb(0,0,0,0.9);
+}
+.text-font{
+  font-size: 11px;
+}
+.justify-start{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.bg-filter{
+  background-color: rgb(48, 48, 48);
+  color: white;
+}
+.bg-white{
+  background-color: white;
+  color: blue;
+}
+.bg-show{
+  background-color: rgb(48, 48, 48);
+}
+.active{
+  background-color: rgb(241, 237, 237);
+  color: black;
+
+}
+.enone{
+  scroll-snap-type: none;
+  overflow: hidden;
+}
+.scrollb{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+.width{
+  width: 360px;
+}
+
+.scrollba{
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.scaled{
+  animation: scale 1s ease-in-out ;
+}
+.short{
+  height: 95px;
+  overflow: hidden;
+}
+.height{
+  height: 400px;
+  overflow: visible;
+}
+@keyframes scale {
+  from{
+    transform: scale(1.1);
+  }
+  to{
+    transform: scale(1.3);
+  }
+}
+.scaleicon{
+
+  animation: scaleicon 1s ease-in-out infinite;
+}
+@keyframes scaleicon {
+  from{
+    transform: scale(1.2);
+  }
+  to{
+    transform: scale(1.3);
+  }
+}
+.underis{
+  z-index: 999;
+}
+.scrolbar{
+  scroll-snap-type: mandatory;
+  overflow-y: scroll;
+}
+.noneheight{
+  height: 92px;
+}
+.height{
+  height: 270px;
+}
+.bg-relative:hover{
+  background-color: rgb(0,0,0,0.9);
+  color: white;
+  opacity: 1;
+
+}
+.bg-relative{
+  color: transparent;
+  background-color: transparent;
+  opacity: 0;
+}
+.bg-relate:hover{
+  background-color: rgb(0,0,0,0.7);
+  color: white;
+  opacity: 1;
+  width: 360px;
+  
+}
+.bg-rel{
+  background-color: rgb(0,0,0,0.7);
+  color: white;  
+}
+.bg-relate{
+  color: transparent;
+  background-color: transparent;
+  opacity: 0;
+}
+.bg-relatives:hover{
+  background-color: rgb(0,0,0,0.7);
+  color: white;
+  opacity: 1;
+}
+.bg-relatives{
+  color: transparent;
+  background-color: transparent;
+  opacity: 0;
+}
+.bg-filter-hover:hover{
+  background-color: rgb(48, 48, 48);
+  color: white;
+  opacity: 1;
+  translate: 7px;
+
+}
+.bg-color{
+  background-color: rgb(0,0,0,0.5);
+  color: white;
+}
+.bg-filter-hover{
+  opacity: 0;
+}
+
+.bg-button{
+  background-color: rgb(13, 13, 13);
 }
