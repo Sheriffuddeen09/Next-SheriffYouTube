@@ -14,6 +14,10 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
-};
+  plugins: [require("tailwindcss-animate"), require("tailwind-scrollbar")],
+  variants: {
+    // ...
+    scrollbar: ['dark']
+}
+} satisfies Config;
 export default config;
