@@ -15,6 +15,7 @@ const initState: Partial<Posts> = {
 
 export default function PostId (post:Posts){
 
+
     const content = (
         <div>
             <RWebShare
@@ -47,6 +48,8 @@ export default function PostId (post:Posts){
     const [isPending, startTransition] = useTransition()
     const [isFetching, setIsFetching] = useState(false)
     const [data, setData] = useState(initState)
+
+    const mutating = isPending || isFetching
 
     const handleCount = () =>{
         setLike(prev => prev + 1)
@@ -116,7 +119,7 @@ export default function PostId (post:Posts){
     }
 
 return(
-    <div>
+    <div className={`mt-8 ${mutating ? "" :""}`}>
     
       <div className='flex flex-col mt-20 px-3 sm:px-8 lg:flex-col sm:my-1.5 text-sm'>
            <span className=''>
