@@ -40,7 +40,7 @@ export default async function PostIdList (){
     {
     users.map(user =>{
         return (
-                <div>
+                <div key={user.id}>
                 <Link href={`/users/${user.id}`}><button className="bg-filter p-1 h-8 rounded-xl">{user.name}</button></Link>
                 </div>
             )

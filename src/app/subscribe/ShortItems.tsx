@@ -10,12 +10,6 @@ export default function ShortItems(post:Posts){
     const handleIcon = () =>{
         setIcon(!icon)
     }
-    const [hide, setHide ] = useState(false)
-
-    const handleHidden = () =>{
-        setHide(!hide)
-    }
-
 
 return(
     <div className=''>

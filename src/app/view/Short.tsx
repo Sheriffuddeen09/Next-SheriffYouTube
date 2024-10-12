@@ -1,5 +1,4 @@
 import { Metadata } from "next"
-import SubscribeList from "./SubscribeList"
 import FetchSubscribeShort from "../../../lib/subscribe/FetchShort"
 import ShortItems from "./ShortItems"
 

@@ -18,7 +18,7 @@ export default async function ShortList (){
                 <div className=" ">
                     {
                         sorts.map((sort)=>(
-                <ShortItem {...sort}/>
+                <ShortItem key={sort.id} {...sort}/>
                     ))}
                 </div>
                 </div>

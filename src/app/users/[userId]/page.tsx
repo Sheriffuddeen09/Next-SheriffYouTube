@@ -26,7 +26,7 @@ export default async function UserId({ params:{ userId } }: Params) {
   {
   users.map(user =>{
       return (
-              <div>
+              <div key={user.id}>
               <Link key={user.id} href={`/users/${user.id}`} ><button className="bg-filter p-1 h-8 rounded-xl">{user.name}</button></Link>
               </div>
           )

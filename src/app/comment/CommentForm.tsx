@@ -15,7 +15,7 @@ export default function CommentForm (){
     const [isFetching, setIsFetching] = useState(false)
     const [data, setData] = useState(initState)
 
-
+    const mutating = isPending || isFetching
     const handleSubmit = async (e: FormEvent<HTMLFormElement>)=>{
         e.preventDefault()
 
@@ -61,7 +61,7 @@ export default function CommentForm (){
 
     return (
 
-        <form  onSubmit={handleSubmit} className="mt-8">
+        <form  onSubmit={handleSubmit} className={`mt-8 ${mutating ? "" :""}`} >
         <div className="inline-flex items-center gap-6">
         <label htmlFor="comment" className="ml-3 font-bold text-2xl">3 Comments</label>
         <p className="inline-flex items-center text-xl gap-2 font-bold"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">

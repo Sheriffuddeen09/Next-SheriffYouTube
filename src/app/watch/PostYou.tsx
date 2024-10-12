@@ -1,8 +1,6 @@
 'use client'
 import Video from 'next-video';
-import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
 
 export default function PostYou(post:Shorts){
 

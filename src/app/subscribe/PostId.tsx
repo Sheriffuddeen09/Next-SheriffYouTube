@@ -47,7 +47,7 @@ export default function PostId (post:Posts){
     const [isPending, startTransition] = useTransition()
     const [isFetching, setIsFetching] = useState(false)
     const [data, setData] = useState(initState)
-
+    const mutating = isFetching || isPending
     const handleCount = () =>{
         setLike(prev => prev + 1)
         localStorage.setItem('count', JSON.stringify(like))
@@ -116,7 +116,7 @@ export default function PostId (post:Posts){
     }
 
 return(
-    <div>
+    <div className={mutating ? "" : ""}>
     
       <div className='flex flex-col mt-20 px-3 sm:px-8 lg:flex-col sm:my-1.5 text-sm'>
            <span className=''>

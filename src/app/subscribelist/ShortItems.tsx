@@ -1,10 +1,7 @@
 'use client'
 import Video from 'next-video';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-//import ShortHide from './ShortHide';
-
 export default function ShortItem(post:Posts){
 
     const [icon, setIcon ] = useState(false)
@@ -12,12 +9,6 @@ export default function ShortItem(post:Posts){
     const handleIcon = () =>{
         setIcon(!icon)
     }
-    const [hide, setHide ] = useState(false)
-
-    const handleHidden = () =>{
-        setHide(!hide)
-    }
-
 
 return(
     <div className=''>

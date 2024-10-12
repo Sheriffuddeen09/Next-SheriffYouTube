@@ -22,7 +22,7 @@ export default async function ListItem({postPost}:Param) {
         <main className="p-3 grid gap-2 grid-cols-1 mt-28 lg:grid-cols-3 md:grid-cols-1 sm:ml-10">
           {
             posts.map((post) =>(
-              <div>
+              <div key={post.id}>
       
         <div className='flex flex-col lg:flex-col md:flex-row md:gap-4 my-1.5 text-sm sm:translate-x-0 -translate-x-2'>
         <Link href={`/edit/${post.id}`}>
@@ -125,7 +125,7 @@ Not interested</p>
             <p className='inline-flex gap-4 my-1.5 text-sm items-center'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
 </svg>
-Don't recommend channel</p>
+Don&apos;t recommend channel</p>
             <p className='inline-flex gap-4 my-1.5 text-sm items-center'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0 2.77-.693a9 9 0 0 1 6.208.682l.108.054a9 9 0 0 0 6.086.71l3.114-.732a48.524 48.524 0 0 1-.005-10.499l-3.11.732a9 9 0 0 1-6.085-.711l-.108-.054a9 9 0 0 0-6.208-.682L3 4.5M3 15V4.5" />
 </svg>

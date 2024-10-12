@@ -1,7 +1,6 @@
 import Navbar from "../../homepage/components/Navbar";
 import Footer from "../../homepage/components/Footer";
 import SideHomepage from "../../homepage/home/SideHompage";
-import ShortList from "../../subscribe/ShortList";
 import FetchHideid from "../../../../lib/subscribe/FetchHideid";
 import { notFound } from "next/navigation";
 import ShortItem from "@/app/subscribe/ShortItem";

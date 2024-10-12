@@ -1,16 +1,10 @@
 'use client'
 import Video from 'next-video';
 import Link from 'next/link';
-import { useState } from 'react';
+
 
 export default function PostViewYou(post:Shorts){
 
-    const [icon, setIcon] = useState(false)
-
-    const handleIcon = () =>{
-
-        setIcon(!icon)
-    }
     return(
       <div>
       

@@ -1,6 +1,4 @@
-import PostList from "./SubscribeLists"
 import Fetchdata from "../../../lib/homepage/Fetchdata"
-import Link from "next/link"
 import { Metadata } from "next"
 import SubscribeLists from "./SubscribeLists"
 
