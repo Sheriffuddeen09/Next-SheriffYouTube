@@ -63,12 +63,3 @@ export default async function UserId({ params:{ userId } }: Params) {
    
 }
 
-
-export async function getStatic (){
-    const userPosts: Promise<User[]> = getFetchUser()
-    const users = await userPosts
-
-    users.map(user =>({
-        userId: user.id
-    }))
-}
