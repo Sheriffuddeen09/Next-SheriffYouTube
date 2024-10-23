@@ -29,7 +29,7 @@ export default async function HomePage (){
 
     const button = (
 
-        <main className="py-2 flex flex-row w-60 mb-6 gap-6 ml-10 lg:w-11/12 md:w-8/12 rounded-lg mb-12 scrollba scroll-p-0 scroll-smooth scrollbar scrollbar-thumb-gray-900  scrollbar-thin scrollbar-track-black">
+        <main className="py-2 flex flex-row w-72 mb-6 gap-6 ml-10 lg:w-11/12 md:w-8/12 rounded-lg mb-12 scrollba scroll-p-0 scroll-smooth scrollbar scrollbar-thumb-gray-900  scrollbar-thin scrollbar-track-black">
                 <Link href={'/'}><button className="bg-filter p-1 h-8 rounded-xl">All</button></Link>
     {
     users.map(user =>{
@@ -45,10 +45,13 @@ export default async function HomePage (){
     
     return (
         <section className="-translate-x-2 sm:translate-x-0 my-8 sm:my-14">
-            <div className="fixed z-10 -translate-x-8 sm:translate-x-0 my-2 sm:my-5 mb-4 h-10">
+            <div className="fixed z-10 hidden sm:block -translate-x-8 sm:translate-x-0 my-2 sm:my-5 mb-4 h-10">
                {button}
             </div>
-            <div className="mt-20">
+            <div className="fixed z-10 sm:hidden block relative bottom-3  -translate-x-5 sm:translate-x-0 my-2 sm:my-5 mb-4 h-10">
+               {button}
+            </div>
+            <div className="-mt-4 sm:mt-20">
                 {content}
             </div>
         </section>

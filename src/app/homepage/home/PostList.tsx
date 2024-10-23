@@ -51,30 +51,32 @@ export default function PostList(post:Posts){
             </div>
 
          </span>
-         <span className='w-64 block sm:hidden'>
-             <Video src={post.video} width={240} className='bg-gray-400 mb-2 flex flex-col w-40 md:w-32 h-60 rounded-xl p-1'
+         <span className='w-80 block sm:hidden'>
+             <Video src={post.video} width={310} className='bg-gray-400 mb-2 flex flex-col w-40 md:w-32 h-60 rounded-xl p-1'
              />
          </span>
         </Link>
          <div className=''>
-        <div className='inline-flex gap-2 sm:gap-20 '>
+        <div className='flex flex-row justify-between mt-2 items-center'>
+          <div className='flex flex-row gap-2 sm:gap-20 items-center'>
           <Link href={`/edit/${post.id}`} className='inline-flex gap-2'>
          <Image alt='user' src={`/${post.user}`} className='rounded-full h-10 w-10' width={30} height={30}/>
-         <p className='text-sm hidden sm:block'>
+         <p className='text-sm hidden sm:block mt-2'>
             { 
                 (post.title).length <= 10 ?
                 post.title : `${(post.title).slice(0,38)}...`
                 
             }
         </p>
-        <p className='text-sm sm:hidden block'>
+        <p className='text-sm sm:hidden block mt-2'>
             { 
                 (post.title).length <= 10 ?
-                post.title : `${(post.title).slice(0,22)}...`
+                post.title : `${(post.title).slice(0,30)}...`
                 
             }
         </p>
         </Link>
+        </div>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 cursor-pointer" onClick={handleIcon}>
         <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z" />
         </svg>
