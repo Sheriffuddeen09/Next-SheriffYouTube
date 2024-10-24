@@ -21,7 +21,7 @@ export default async function UserId({ params:{ userId } }: Params) {
 
     const button = (
 
-      <main className=" pt-2 flex flex-row w-60 -translate-x-8 sm:translate-x-0 mb-6 gap-6 ml-10 mb-20  lg:w-11/12 md:w-8/12 rounded-lg scrollba scroll-p-0 scroll-smooth scrollbar scrollbar-thumb-gray-900  scrollbar-thin scrollbar-track-black">
+      <main className=" pt-2 flex flex-row w-60 -translate-x-8 sm:translate-x-0 mb-6 gap-6 ml-10 mb-20  lg:w-11/12 md:w-8/12 rounded-lg scrollba scroll-p-0 scroll-smooth scrollbar scrollbar-thumb-transparent  scrollbar-thin scrollbar-track-transparent">
               <Link href={'/'}><button className="bg-filter p-1 h-8 rounded-xl">All</button></Link>
   {
   users.map(user =>{
