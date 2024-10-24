@@ -166,3 +166,6 @@ body {
 .bg-button{
   background-color: rgb(13, 13, 13);
 }
+.toggle-bg{
+  background-color: rgb(0,0,0,0.7);
+}

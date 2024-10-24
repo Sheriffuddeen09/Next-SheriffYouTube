@@ -32,7 +32,7 @@ export default function CommentList(post:Comments){
       <div>     
         <div className='ml-3 my-1.5 text-sm flex-col flex'>
          <div className='flex-col flex gap-5 mb-10'>
-        <div className='inline-flex gap-10 sm:gap-20 '>
+        <div className='flex justify-between flex-row '>
         <span className='inline-flex gap-3 '>
          <Image alt='user' src={`/${post.image}`} className='rounded-full' width={40} height={50}/>
          <p className='text-sm'>
