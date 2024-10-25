@@ -49,7 +49,7 @@ export default async function page() {
 
           </div>
           </Link>
-          <hr className="w-60"/>
+          <hr className="w-80"/>
           <Link href={'/movie'}>
             <p className="inline-flex gap-6 my-3">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
@@ -69,7 +69,7 @@ export default async function page() {
              
             </p>
           </Link>
-          <hr className="w-60"/>
+          <hr className="w-80"/>
           <Link href={'/timed'}>
             <p className="inline-flex gap-6 my-3">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="border size-4">
@@ -91,7 +91,7 @@ export default async function page() {
             </p>
           </Link>
           </div>
-          <hr className="w-60 mb-16"/>
+          <hr className="w-80 mb-16"/>
         </div>
         <div className="translate-x-12">
           <h1 className="font-bold text-xl">Your Clip</h1>

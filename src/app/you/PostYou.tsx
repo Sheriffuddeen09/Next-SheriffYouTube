@@ -15,7 +15,7 @@ export default function PostYou(post:Posts){
     return(
       <div>
       
-        <div className='flex -mx-16 flex-col lg:flex-col md:flex-row md:gap-4 my-1.5 text-sm translate-x-12'>
+        <div className='flex -mx-3 flex-col lg:flex-col md:flex-row md:gap-4 my-1.5 text-sm translate-x-3'>
         <Link href={`/edityou/${post.id}`}>
              <div className='width hidden sm:block translate-x-3'>
              <Video src={post.video} width={230} className=' mb-2 w-40 md:w-32 h-40 rounded-xl p-1'
@@ -87,7 +87,7 @@ export default function PostYou(post:Posts){
       
         </Link>
          <div className='translate-x-3'>
-        <div className='inline-flex gap-0 '>
+        <div className='flex flex-row justify-between gap-0 '>
           <Link href={`/edityou/${post.id}`} className='inline-flex gap-2'>
          <Image alt='user' src={`/${post.user}`} className='rounded-full w-10 h-10' width={30} height={30}/>
          <p className='text-sm'>
@@ -98,7 +98,7 @@ export default function PostYou(post:Posts){
             }
         </p>
         </Link>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 cursor-pointer" onClick={handleIcon}>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 cursor-pointer -translate-x-8" onClick={handleIcon}>
         <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z" />
         </svg>
 

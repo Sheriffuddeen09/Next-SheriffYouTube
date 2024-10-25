@@ -28,7 +28,7 @@ export default async function HomeLike (){
         <section className="-translate-x-2 sm:translate-x-14 my-8 sm:my-14">
             <div className="mt-14">
                 <div className="flex flex-row gap-96">
-                <p className="text-xl font-bold inline-flex gap-2">Watch Later <span className="font-light">{posts.length}</span></p>
+                <p className="text-xl font-bold inline-flex gap-2 translate-x-4">Watch Later <span className="font-light">{posts.length}</span></p>
                 <Link href={'/viewlike'}><p className="transition-all duration-500 ease-in-out hover:bg-[#303030] text-sm border rounded-2xl p-2 bg-black translate-x-96 ml-24">View all</p>
                 </Link></div>
                 {content}

@@ -29,7 +29,7 @@ export default async function HomeWatch (){
             <div className="mt-14">
                 <div className="flex flex-row gap-96">
                 <div className="inline-flex gap-3 items-center">
-                <p className="text-xl font-bold">Playlist</p>
+                <p className="text-xl font-bold translate-x-4">Playlist</p>
                 <select name="select" id="select" className="text-gray-400 font-bold text-sm border border-transparent focus:bg-transparent bg-transparent outline-transparent p-2">
                     <option value="A-Z" className="my-6 bg-filter p-2 "> A-Z</option>
                     <option value="Recently View" className="my-6 bg-filter p-2">Recently added</option>

@@ -7,7 +7,7 @@ export default function PostYou(post:Shorts){
     return(
       <div>
       
-        <div className='flex -mx-16 flex-col lg:flex-col md:flex-row md:gap-4 my-1.5 text-sm translate-x-12'>
+        <div className='flex flex-col lg:flex-col md:flex-row md:gap-4 my-1.5 text-sm translate-x-3'>
         <Link href={`/editwatch/${post.userId}`}>
              <div className='width hidden sm:block translate-x-3'>
              <Video src={post.video} width={230} className=' mb-2 w-40 md:w-32 h-40 rounded-xl p-1'
