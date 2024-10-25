@@ -4,8 +4,8 @@ import getFetchUser from "../../../lib/homepage/FetchUser"
 import { Metadata } from "next"
 import TodoIdList from "./TodoIdList"
 import Image from "next/image"
-import ImageOne from './images/backend.jpg'
-import ImageThree from './images/cola.jpg'
+import ImageOne from './images/onlinetech.jpg'
+import ImageThree from './images/transport.jpg'
 import ImageFive from './images/education.jpg'
 import PostIddown from "./PostIddown"
 
@@ -35,7 +35,7 @@ export default async function PostIdList (){
 
     const button = (
 
-        <main className="fixed py-2 flex flex-row w-60 mb-6 gap-6 ml-5 sm:ml-10 lg:w-96 md:w-8/12 rounded-lg mb-12 scrollba scroll-p-0 scroll-smooth scrollbar scrollbar-thumb-gray-900  scrollbar-thin scrollbar-track-black">
+        <main className="fixed py-2 flex flex-row z-10 w-80 mb-6 gap-3 ml-5 sm:ml-10 lg:w-96 md:w-8/12 rounded-lg mb-12 scrollba scroll-p-0 scroll-smooth scrollbar scrollbar-thumb-gray-900  scrollbar-thin scrollbar-track-black">
                 <Link href={'/'}><button className="bg-filter p-1 h-8 rounded-xl">All</button></Link>
     {
     users.map(user =>{
@@ -50,25 +50,22 @@ export default async function PostIdList (){
     )
     
     return (
-        <section className="-translate-x-3 sm:translate-x-0">
-           
-            
-            <div className="sm:mt-28">
+        <section className="sm:translate-x-0 -translate-x-3">
+           <div className="-mt-10 sm:mt-28">
                 {button}
             </div>
             <div className="sm:mt-16 mt-8">
             {content}
               
             </div>
-            <div className="sm:hidden block">
-            <div className=" ml-3 p-2 w-60 flex translate-y-20 gap-2 rounded-lg scrollb scroll-p-0 scroll-smooth scrollbar scrollbar-thumb-blue-300  scrollbar-thin scrollbar-track-white ">
-                <Image src={ImageOne} alt="imaageOne" className="w-72 rounded-xl" width={200} style={{width:"250px"}} />
-                <Image src={ImageThree} alt="imaageThree" className="w-72rounded-xl" width={200} style={{width:"250px"}}/>
-                <Image src={ImageFive} alt="imaageFive" className="w-72 rounded-xl" width={200} style={{width:"250px"}}/>
+            
+            <div className="sm:hidden block ml-3 w-80 p-2 flex flex-row  translate-y-20 gap-2 rounded-lg scrollb scroll-p-0 scroll-smooth scrollbar scrollbar-thumb-blue-300  scrollbar-thin scrollbar-track-white ">
+                <Image src={ImageOne} alt="imaageOne" className="rounded-xl" width={200} style={{width:"250px"}} />
+                <Image src={ImageThree} alt="imaageThree" className="w-72 rounded-xl" width={200} style={{width:"250px"}}/>
+                <Image src={ImageFive} alt="imaageFive" className="rounded-xl" width={200} style={{width:"250px"}}/>
             </div>
-            <div className="translate-y-14 ml-4">
+            <div className="translate-y-14 ml-4 p-2 sm:hidden block">
             <PostIddown />
-            </div>
             </div>
         </section>
     )

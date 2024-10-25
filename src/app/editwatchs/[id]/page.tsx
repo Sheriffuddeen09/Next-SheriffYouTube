@@ -25,7 +25,7 @@ export default async function page({ params: { id } }: Props) {
     <Navbar />
     </div>
         <main className="lg:inline-flex -translate-y-4">
-        <div className="">
+        <div className="-translate-y-10 sm:translate-y-24">
             <PostIds  {...post}  />
             <PostItem   />
             

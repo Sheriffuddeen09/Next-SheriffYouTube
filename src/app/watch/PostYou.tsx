@@ -7,7 +7,7 @@ export default function PostYou(post:Shorts){
     return(
       <div>
       
-        <div className='flex flex-col lg:flex-col md:flex-row md:gap-4 my-1.5 text-sm translate-x-3'>
+        <div className='flex flex-col lg:flex-col md:flex-row md:gap-4 my-1.5 text-sm sm:translate-x-3'>
         <Link href={`/editwatch/${post.userId}`}>
              <div className='width hidden sm:block translate-x-3'>
              <Video src={post.video} width={230} className=' mb-2 w-40 md:w-32 h-40 rounded-xl p-1'
@@ -28,12 +28,12 @@ export default function PostYou(post:Shorts){
             </div>
             </div>
       
-         <span className='w-64 block sm:hidden translate-x-3'>
-             <Video src={post.video} width={240} className=' mb-2 w-40 md:w-32 h-40 rounded-xl p-1'
+            <span className='w-80 block sm:hidden'>
+             <Video src={post.video} width={310} className='bg-gray-400 mb-2 flex flex-col w-40 md:w-32 h-60 rounded-xl p-1'
              />
          </span>
         </Link>
-         <div className='translate-x-3 -translate-y-0'>
+         <div className='-translate-y-0'>
         <div className='inline-flex gap-4 '>
           <Link href={`/editwatch/${post.userId}`} className='inline-flex gap-2'>
          <p className='text-sm w-40'>

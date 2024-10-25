@@ -47,7 +47,7 @@ export default function PostId (post:Posts){
     const [isPending, startTransition] = useTransition()
     const [isFetching, setIsFetching] = useState(false)
     const [data, setData] = useState(initState)
-    const mutating = isFetching || isPending
+    const mutating = isPending || isFetching
 
     const handleCount = () =>{
         setLike(prev => prev + 1)
@@ -124,18 +124,18 @@ return(
            <Video src={post.video} width={730} className='bg-gray-50 w-96 mb-2 h-96 rounded-xl hidden sm:block'
            />
        </span>
-       <span className='w-64'>
-           <Video src={post.video} width={250} className='bg-gray-50 w-52 mb-2 h-72 rounded-xl sm:hidden block'
-           />
-       </span>
+       <span className='w-80 block sm:hidden'>
+             <Video src={post.video} width={310} className='bg-gray-400 mb-2 flex flex-col w-40 md:w-32 h-60 rounded-xl p-1'
+             />
+         </span>
        <div>
       <div className='inline-flex gap-2'>
-       <p className='sm:text-xl text-sm font-bold w-10/12'>
+       <p className='sm:text-xl text-sm font-bold'>
           {post.title}
       </p>
       </div>
-      <div className="flex-col flex sm:flex-row mb-0 gap-14 items-center -translate-x-5 sm:translate-x-0 mt-4">
-        <div className="inline-flex gap-2 items-center">
+      <div className="flex-col flex sm:flex-row mb-0 gap-14 items-center mt-4">
+        <div className="inline-flex gap-4 items-center">
       <Image alt='user' src={`/${post.user}`} className='rounded-full w-10 h-10' width={30} height={30}/>
       <span>
       <p className='text-sm text-gray-400'>{post.tag}</p>
@@ -174,7 +174,7 @@ Subscribed <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 2
       </div>
       </div>
       <div className="sm:hidden block ">
-      <div className="inline-flex gap-2 items-center mt-5 w-60 scrollba scroll-p-0 scroll-smooth scrollbar scrollbar-thumb-gray-900  scrollbar-thin scrollbar-track-black">
+      <div className="inline-flex gap-2 items-center mt-5 w-80 scrollba scroll-p-0 scroll-smooth scrollbar scrollbar-thumb-gray-900  scrollbar-thin scrollbar-track-black">
       <div className="flex gap-16 items-center justify-around bg-filter w-40 p-1 rounded-2xl" ><p className="text-center translate-x-10">{like}</p><p className="bg-gray-100 w-0.5 h-8"></p> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-16 -translate-x-10 cursor-pointer" onClick={handleCount}>
   <path stroke-linecap="round" stroke-linejoin="round" d="M7.498 15.25H4.372c-1.026 0-1.945-.694-2.054-1.715a12.137 12.137 0 0 1-.068-1.285c0-2.848.992-5.464 2.649-7.521C5.287 4.247 5.886 4 6.504 4h4.016a4.5 4.5 0 0 1 1.423.23l3.114 1.04a4.5 4.5 0 0 0 1.423.23h1.294M7.498 15.25c.618 0 .991.724.725 1.282A7.471 7.471 0 0 0 7.5 19.75 2.25 2.25 0 0 0 9.75 22a.75.75 0 0 0 .75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 0 0 2.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384m-10.253 1.5H9.7m8.075-9.75c.01.05.027.1.05.148.593 1.2.925 2.55.925 3.977 0 1.487-.36 2.89-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398-.306.774-1.086 1.227-1.918 1.227h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 0 0 .303-.54" />
 </svg>
@@ -207,7 +207,7 @@ Report</p>
       
           </div>
       
-          <section className={`bg-filter flex flex-col p-3 text-sm font-bold mt-16 ml-3 rounded-2xl w-64 sm:w-11/12`}>
+          <section className={`bg-filter flex flex-col p-3 text-sm font-bold sm:mt-16 mt-6 ml-3 rounded-2xl w-80 sm:w-11/12`}>
             <div className="flex flex-col">{post.views} views {post.date} <span className="text-blue-400">NIGERIA</span> 
                 <br />
                 <Link href={'/short'} className="text-blue-400">#shortsvideo</Link>
@@ -284,7 +284,7 @@ Report</p>
         
         id="title"
         name="title"
-        onChange={handleChange} placeholder="Add comments" className="sm:w-11/12 w-60 border-l-0 border-r-0 border-t-0 py-2 px-5 ml-3 my-6 rounded-xl border border-white bg-black"/>
+        onChange={handleChange} placeholder="Add comments" className="sm:w-11/12 w-80 border-l-0 border-r-0 border-t-0 py-2 px-5 ml-3 my-6 rounded-xl border border-white bg-black"/>
       </form>
     <div>
     </div>
