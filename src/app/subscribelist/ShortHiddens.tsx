@@ -18,7 +18,7 @@ return(
   <Link href={'/subscribehideid'}>
     <Video src={post.video} width={240} height={400} 
     className='rounded-xl hidden sm:block rounded-xl -translate-y-5'/>
-    <Video src={post.video} width={240} height={450} 
+    <Video src={post.video} width={310} height={450} 
     className='rounded-xl block sm:hidden -translate-y-5'/>
     </Link>
         <div className=' mt-1'>
@@ -31,7 +31,7 @@ return(
 </svg>
 </p>
     <Link href={'/subscribehideid'}>
-    <p className=' text-sm text-gray-400'>{post.views}</p>
+    <p className=' text-sm text-gray-400 mb-10'>{post.views}</p>
     </Link>
     </div>
     <div>

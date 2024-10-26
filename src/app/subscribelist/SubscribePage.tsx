@@ -25,8 +25,8 @@ export default async function SubscribePage (){
 
     
     return (
-        <section className="-translate-x-2 sm:translate-x-0 my-8 sm:my-14">
-            <div className="mt-14">
+        <section className="translate-x-1 sm:translate-x-0 my-8 sm:my-14">
+            <div className="-mt-10 sm:mt-14">
                 {content}
             </div>
         </section>

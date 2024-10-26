@@ -51,8 +51,8 @@ export default function SubscribeLists(post:Posts){
             </div>
 
          </span>
-         <span className='w-64 block sm:hidden'>
-             <Video src={post.video} width={240} className='bg-gray-400 mb-2 flex flex-col w-40 md:w-32 h-60 rounded-xl p-1'
+         <span className='w-80 block sm:hidden'>
+             <Video src={post.video} width={310} className='bg-gray-400 mb-2 flex flex-col w-40 md:w-32 h-60 rounded-xl p-1'
              />
          </span>
         </Link>

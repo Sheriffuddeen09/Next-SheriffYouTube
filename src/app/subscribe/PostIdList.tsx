@@ -4,8 +4,8 @@ import getFetchUser from "../../../lib/homepage/FetchUser"
 import { Metadata } from "next"
 import TodoIdList from "./TodoIdList"
 import Image from "next/image"
-import ImageOne from './images/backend.jpg'
-import ImageThree from './images/cola.jpg'
+import ImageOne from './images/onlinetech.jpg'
+import ImageThree from './images/transport.jpg'
 import ImageFive from './images/education.jpg'
 import PostIddown from "./PostIddown"
 
@@ -50,14 +50,12 @@ export default async function PostIdList (){
     )
     
     return (
-        <section className="-translate-x-6 sm:translate-x-0">
-           
-            
-            <div className="sm:mt-28">
-                {button}
-            </div>
-            <div className="sm:mt-16 mt-8">
-            {content}
+        <section className="sm:translate-x-0 -translate-x-3">
+        <div className="-mt-10 sm:mt-28">
+             {button}
+         </div>
+         <div className="sm:mt-16 mt-8">
+         {content}
               
             </div>
             <div className="sm:hidden block ml-3 p-2 flex translate-y-20 gap-2 rounded-lg scrollb scroll-p-0 scroll-smooth scrollbar scrollbar-thumb-blue-300  scrollbar-thin scrollbar-track-white ">

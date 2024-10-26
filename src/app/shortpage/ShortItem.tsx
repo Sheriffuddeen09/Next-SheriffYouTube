@@ -120,7 +120,7 @@ Send feedback</p>
         <div className='mx-auto flex flex-col items-center justify-center'>
           <Video src={sort.video} width={300} height={400} 
           className='rounded-xl hidden sm:block -translate-y-5'/>
-          <Video src={sort.video} width={240} height={350} 
+          <Video src={sort.video} width={310} height={350} 
           className='rounded-xl block sm:hidden -translate-y-5'/>
           <div className='relative -top-24'>
               <div className='inline-flex items-center gap-2 ml-2 sm:ml-5'>
@@ -139,7 +139,7 @@ Send feedback</p>
         </button>
       
               </div>
-              <div className='bg-black pt-6 pb-8 rounded-b-xl mt-1'>
+              <div className='bg-black pt-6 pb-8 px-8 rounded-b-xl mt-1'>
               <p className='font-bold text-sm  ml-3 text-white'>.{sort.title}</p>
               <p className='sm:w-72 w-60 mt-5 text-sm text-white ml-3 font-bold'>{sort.body}</p>
           </div>
