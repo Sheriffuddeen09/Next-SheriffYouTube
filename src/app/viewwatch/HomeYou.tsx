@@ -25,7 +25,7 @@ export default async function HomeViewWatch (){
     
     return (
        
-        <section className="-translate-x-2 sm:translate-x-14 my-8 sm:my-14">
+        <section className="translate-x-1 sm:translate-x-14 my-8 sm:my-14">
             <div className="inline-flex gap-5 mt-8">
                 <p className="sm:text-6xl text-4xl text-white sm:w-28 w-20 sm:h-28 h-20 rounded-full bg-blue-800 flex items-center justify-center">O</p>
                 <div>

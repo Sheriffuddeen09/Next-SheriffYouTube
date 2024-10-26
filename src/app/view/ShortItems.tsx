@@ -16,14 +16,14 @@ return(
   <div className=''>
     <Video src={post.video} width={240} height={400} 
     className='rounded-xl hidden sm:block rounded-xl -translate-y-5'/>
-    <Video src={post.video} width={240} height={450} 
+    <Video src={post.video} width={310} height={450} 
     className='rounded-xl block sm:hidden -translate-y-5'/>
         <div className=' mt-1'>
         <p className='font-bold text-sm inline-flex gap-5'>{post.title} <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 cursor-pointers" onClick={handleIcon}>
   <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z" />
 </svg>
 </p>
-        <p className=' text-sm text-gray-400'>{post.views}</p>
+        <p className=' text-sm text-gray-400 mb-10'>{post.views}</p>
     </div>
     <div>
     </div>

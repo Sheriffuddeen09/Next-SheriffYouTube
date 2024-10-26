@@ -29,7 +29,7 @@ export default async function Subscribe (){
     return (
         <section className="-translate-x-2 sm:translate-x-0 my-4 sm:my-4">
             
-            <div className="mt-14">
+            <div className="-mt-10 sm:mt-14">
             <div className="flex flex-row justify-between items-center mt-10 translate-y-5 p-3 mx-3">
         <p className="text-white font-bold text-xl">Latest</p>
 
