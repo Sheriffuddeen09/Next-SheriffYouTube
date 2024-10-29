@@ -1,7 +1,6 @@
-
-import FetchSubscribe from "../../../lib/subscribe/FetchSubscribe"
 import { Metadata } from "next"
 import PostList from "./PostList"
+import FetchSubscribe from "../../../lib/subscribe/FetchSubscribe"
 
 export const metadata:Metadata = {
     title: 'full view',

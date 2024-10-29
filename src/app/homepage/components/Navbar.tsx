@@ -13,7 +13,7 @@ export default function Navbar () {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3500/notify");
+        const response = await fetch("https://next-server-qb2r.onrender.com/notify");
         const result = await response.json() 
         setData(result);
       } catch (error) {

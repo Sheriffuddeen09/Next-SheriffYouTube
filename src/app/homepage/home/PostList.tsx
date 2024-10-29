@@ -1,5 +1,7 @@
 'use client'
-import Video from 'next-video';
+//import Video from 'next-video';
+import { CldVideoPlayer } from 'next-cloudinary';
+import styles from '@/styles/Home.module.css'
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -18,7 +20,7 @@ export default function PostList(post:Posts){
         <div className='flex flex-col lg:flex-col md:flex-row md:gap-4 my-1.5 text-sm sm:translate-x-0 -translate-x-2'>
         <Link href={`/edit/${post.id}`}>
              <span className='width hidden sm:block'>
-             <Video src={post.video} width={350} className='bg-gray-400 mb-2 w-40 md:w-32 h-60 rounded-xl p-1'
+             <CldVideoPlayer src={post.video} width={350} className='bg-gray-400 mb-2 w-40 md:w-32 h-60 rounded-xl p-1'
              />
              <div className=' bg-relate relative bottom-60  transition-all duration-500 ease-in-out  -translate-y-2 -mb-60 h-60 rounded-xl'>
               <div className='flex flex-col gap-1 fixed top-3 right-2'>
@@ -52,7 +54,7 @@ export default function PostList(post:Posts){
 
          </span>
          <span className='w-80 block sm:hidden'>
-             <Video src={post.video} width={310} className='bg-gray-400 mb-2 flex flex-col w-40 md:w-32 h-60 rounded-xl p-1'
+             <CldVideoPlayer src={post.video} width={310} className='bg-gray-400 mb-2 flex flex-col w-40 md:w-32 h-60 rounded-xl p-1'
              />
          </span>
         </Link>
