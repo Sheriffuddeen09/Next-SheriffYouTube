@@ -14,7 +14,7 @@ export default function PostList(post:Posts){
     return(
       <div>
       
-        <div className='flex lg:flex-col flex-row gap-2 my-1.5 text-sm sm:translate-x-0 -translate-x-2'>
+        <div className='flex lg:flex-col flex-row gap-6 my-1.5 text-sm sm:translate-x-0 p-2 -translate-x-2'>
         <Link href={`/downloadid/${post.id}`}>
              <span className='width hidden sm:block'>
              <Video src={post.video} width={350} className='bg-gray-400 mb-2 w-40 md:w-32 h-60 rounded-xl p-1'

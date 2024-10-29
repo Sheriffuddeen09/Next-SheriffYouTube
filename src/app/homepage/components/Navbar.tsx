@@ -81,12 +81,22 @@ export default function Navbar () {
               </p>
                  <h1 className="sm:translate-x-3 -translate-x-8">Sherifftube</h1>
                     <div className="block sm:hidden inline-flex gap-0 items-center translate-x-3">
+                <div className="hidden sm:block">
                 <p className="rounded-2xl p-2 transition-all inline-flex duration-500 ease-in-out hover:bg-[#1a222f]" onClick={handleNavbar}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  className="size-5 rounded-2xl transition-all duration-500 ease-in-out hover:bg-[#1a222f]">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
                 </svg>
                 <span className={`text-white text-sm rounded-full w-5 h-5 text-center bg-red-700 ${nav ? "hidden" : "block"}`}>5</span>
               </p>
+              </div>
+              <Link href={'/notify'} className="sm:hidden block">
+              <p className="rounded-2xl p-2 transition-all inline-flex duration-500 ease-in-out hover:bg-[#1a222f]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  className="size-5 rounded-2xl transition-all duration-500 ease-in-out hover:bg-[#1a222f]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                </svg>
+                <span className={`text-white text-sm rounded-full w-5 h-5 text-center bg-red-700`}>5</span>
+              </p>
+              </Link>
                 <p className="rounded-2xl p-2 transition-all duration-500 ease-in-out hover:bg-[#1a222f]">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-2 block sm:hidden rounded-2xl transition-all duration-500 ease-in-out hover:bg-[#1a222f] h-10 w-8 text-white" onClick={handleMobile}>
                     <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
@@ -251,7 +261,7 @@ export default function Navbar () {
                 </div>
 
 
-                <div onClick={handleNavbar} className={`sm:w-5/12 w-full  p-5 bg-filter z-10 flex flex-col overflow-hidden rounded-2xl scrollb scroll-p-0 scroll-smooth scrollbar scrollbar-thumb-gray-800  scrollbar-thin scrollbar-track-black rounded-lg fixed top-4 right-4 ${nav ? "block" : "hidden"}`} style={{height:"680px"}}>
+                <div onClick={handleNavbar} className={`sm:w-5/12 w-full z-10  p-5 bg-black z-10 flex flex-col overflow-hidden rounded-2xl scrollb scroll-p-0 scroll-smooth scrollbar scrollbar-thumb-gray-800  scrollbar-thin scrollbar-track-black rounded-lg fixed top-4 right-4 ${nav ? "block" : "hidden"}`} style={{height:"680px"}}>
                   <div>
                   {content}
                 </div>

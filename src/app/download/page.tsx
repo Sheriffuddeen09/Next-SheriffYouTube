@@ -72,8 +72,8 @@ Subscriptions</p>
         <div className="hidden sm:block">
         <SideHomepage />
         </div>
-        <div className="translate-y-16">
-            <h1 className="sm:text-2xl sm:font-bold ">Your download</h1>
+        <div className="sm:translate-y-16 translate-y-8">
+            <h1 className="text-2xl font-bold translate-x-3">Your download</h1>
             {content}
             <hr className="w-60 sm:w-full"/>
             <p className="my-5">Download available</p>
