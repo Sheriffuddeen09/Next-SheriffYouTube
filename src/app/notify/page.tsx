@@ -31,7 +31,7 @@ const [data, setData] = useState([]); // based on your data you should store it 
   )
 
   return (
-    <div>
+    <div className="overflow-hidden">
         <Navbar />
         {content}
         <Footer />

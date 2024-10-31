@@ -9,8 +9,8 @@ export default async function page() {
   return (
     <section>
     <Navbar />
-    <section className="min-h-screen text-base">
-      <div className="flex p-3 flex-row md:gap-48 lg:gap-96 ">
+    <section className="min-h-screen text-base overflow-hidden">
+      <div className="flex sm:p-3 p-1 flex-row md:gap-48 lg:gap-96 ">
         <div className="hidden sm:block">
         <SideHomepage />
         </div>

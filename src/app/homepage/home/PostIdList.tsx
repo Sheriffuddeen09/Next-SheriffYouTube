@@ -59,7 +59,7 @@ export default async function PostIdList (){
               
             </div>
             
-            <div className="sm:hidden block ml-3 w-80 p-2 flex flex-row  translate-y-20 gap-2 rounded-lg scrollb scroll-p-0 scroll-smooth scrollbar scrollbar-thumb-blue-300  scrollbar-thin scrollbar-track-white ">
+            <div className="sm:hidden block ml-3 w-72 p-2 flex flex-row  translate-y-20 gap-2 rounded-lg scrollb scroll-p-0 scroll-smooth scrollbar scrollbar-thumb-blue-300  scrollbar-thin scrollbar-track-white ">
                 <Image src={ImageOne} alt="imaageOne" className="rounded-xl" width={200} style={{width:"250px"}} />
                 <Image src={ImageThree} alt="imaageThree" className="w-72 rounded-xl" width={200} style={{width:"250px"}}/>
                 <Image src={ImageFive} alt="imaageFive" className="rounded-xl" width={200} style={{width:"250px"}}/>
