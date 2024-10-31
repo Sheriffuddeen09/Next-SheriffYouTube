@@ -45,7 +45,7 @@ export default async function HomePage (){
     
     return (
         <section className="-translate-x-2 sm:translate-x-0 my-8 sm:my-14">
-            <div className="fixed z-10 hidden sm:block -translate-x-8 sm:-translate-x-6 my-2 sm:my-5 mb-4 h-10">
+            <div className="fixed z-10 hidden sm:block -translate-x-10 sm:-translate-x-6 my-2 sm:my-5 mb-4 h-10">
                {button}
             </div>
             <div className="fixed z-10 sm:hidden block relative bottom-3  -translate-x-5 sm:translate-x-0 my-2 sm:my-5 mb-4 h-10">

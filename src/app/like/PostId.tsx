@@ -124,8 +124,8 @@ return(
            <Video src={post.video} width={730} className='bg-gray-50 w-96 mb-2 h-96 rounded-xl hidden sm:block'
            />
        </span>
-       <span className='w-72 block sm:hidden'>
-             <Video src={post.video} width={285} className='bg-gray-400 mb-2 flex flex-col w-40 md:w-32 h-60 rounded-xl p-1'
+       <span className='block sm:hidden' style={{width:'297px'}}>
+             <Video src={post.video} width={290} className='bg-gray-400 mb-2 flex flex-col w-40 md:w-32 h-60 rounded-xl p-1'
              />
          </span>
        <div>
