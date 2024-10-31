@@ -37,7 +37,7 @@ export default async function UserId({ params:{ userId } }: Params) {
 
    
     return (
-      <section>
+      <section className="overflow-hidden">
       <Navbar />
       <section className="min-h-screen text-base">
         <div className="flex p-3 flex-row gap-12">

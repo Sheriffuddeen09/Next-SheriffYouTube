@@ -115,7 +115,7 @@ Send feedback</p>
       <div className='mx-auto flex flex-col items-center justify-center'>
         <Video src={short.video} width={300} height={520} 
         className='rounded-xl hidden sm:block translate-y-20'/>
-        <Video src={short.video} width={310} height={450} 
+        <Video src={short.video} width={285} height={450} 
         className='rounded-xl block sm:hidden -translate-y-5'/>
         <div className='relative -top-24'>
             <div className='inline-flex items-center gap-2 ml-5'>
@@ -142,7 +142,7 @@ Send feedback</p>
         <div>
         </div>
     </div>
-    <div className='relative right-20 sm:right-0'>
+    <div className='relative right-24 sm:right-0'>
         {sidecontent}
     </div>
     </div>

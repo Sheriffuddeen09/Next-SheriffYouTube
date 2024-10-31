@@ -50,8 +50,8 @@ export default function PostViewLike(post:Posts){
               </div>
             </div>
          </span>
-         <span className='w-80 block sm:hidden'>
-             <Video src={post.video} width={310} className='bg-gray-400 mb-2 flex flex-col w-40 md:w-32 h-60 rounded-xl p-1'
+         <span className='w-72 block sm:hidden'>
+             <Video src={post.video} width={285} className='bg-gray-400 mb-2 flex flex-col w-40 md:w-32 h-60 rounded-xl p-1'
              />
          </span>
         </Link>
@@ -79,7 +79,7 @@ export default function PostViewLike(post:Posts){
         </div>
         
             </div>
-            <div onClick={handleIcon} className={` flex flex-col  sm:w-64 rounded-xl p-4 relative -mb-96 -top-80 bg-filter -translate-y-10 left-32 z-10 ${icon ? "block" : "hidden"}`}>
+            <div onClick={handleIcon} className={` flex flex-col  sm:w-64 rounded-xl p-4 relative -mb-96 -to72 bg-filter -translate-y-10 left-32 z-10 ${icon ? "block" : "hidden"}`}>
             <p className='inline-flex gap-4 my-1.5 text-sm items-center'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="border size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
 </svg>

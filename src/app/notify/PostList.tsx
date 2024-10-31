@@ -4,9 +4,9 @@ export default function PostList(post:Posts){
 
     return(
         <div className="flex flex-col gap-4 p-2 text-white my-5">
-            <div className="flex flex-row gap-3">
+            <div className="flex flex-row gap-3 p-2">
             <span>
-            <Image src={`/${post.user}`} alt="imagepicture" className="w-10 h-10 rounded-full" height={30} width={30} />
+            <Image src={`/${post.user}`} alt="imagepicture" className="w-10 h-10 rounded-xl" height={30} width={30} />
             </span>
             <div>
                 <p className="w-40 text-sm">{post.title}</p>

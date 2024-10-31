@@ -12,7 +12,7 @@ export default function page() {
  
 
   return (
-    <section>
+    <section className="overflow-hidden">
     <Navbar />
     <section className="min-h-screen text-base">
       <div className="flex p-4 flex-row gap-16 ">

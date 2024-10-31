@@ -68,7 +68,7 @@ export default function Navbar () {
 
         <header className="sm:fixed text-white sm:mt-0 -mb-10 w-full lg:translate-y-0 md:-translate-y-0  sm:mb-0 pt-1  bg-black isolate underis">
             <nav className="flex flex-row justify-between text-white isolate lg:gap-48 sm:-translate-x-10 md:gap-0 items-center mx-8 sm:mt-2 mt-5 -mb-6 sm:mb-0 -translate-x-5">
-                <div className="inline-flex sm:gap-6 gap-3 font-bold text-2xl -translate-x-0 items-center -translate-y-3 sm:-translate-y-0">
+                <div className="inline-flex sm:gap-6 gap-2 font-bold text-2xl -translate-x-0 items-center -translate-y-3 sm:-translate-y-0">
               <p className="">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 border bg-red-700 sm:hidden block rounded-2xl">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />

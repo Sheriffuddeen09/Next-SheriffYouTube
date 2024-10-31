@@ -74,7 +74,7 @@ export default function CommentForm (){
         
         id="content"
         name="content"
-        onChange={handleChange} placeholder="Add comments" className="w-11/12 border-l-0 border-r-0 border-t-0 py-2 px-5 ml-3 my-6 rounded-xl border border-white bg-black"/>
+        onChange={handleChange} placeholder="Add comments" className="sm:w-11/12 w-72 border-l-0 border-r-0 border-t-0 py-2 px-5 ml-3 my-6 rounded-xl border border-white bg-black"/>
       </form>
  
 

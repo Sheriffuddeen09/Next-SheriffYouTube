@@ -125,7 +125,7 @@ return(
            />
        </span>
        <span className='w-72 block sm:hidden'>
-             <Video src={post.video} width={290} className='bg-gray-400 mb-2 flex flex-col w-40 md:w-32 h-60 rounded-xl p-1'
+             <Video src={post.video} width={285} className='bg-gray-400 mb-2 flex flex-col w-40 md:w-32 h-60 rounded-xl p-1'
              />
          </span>
        <div>

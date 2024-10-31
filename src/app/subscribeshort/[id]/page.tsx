@@ -21,7 +21,7 @@ export default async function page({ params: { id } }: Props) {
 
 
   return (
-    <section>
+    <section className="overflow-hidden">
     <Navbar />
     <section className="min-h-screen text-base">
       <div className="flex p-3 flex-row md:gap-48 lg:gap-96 ">

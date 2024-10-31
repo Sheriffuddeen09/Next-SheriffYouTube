@@ -51,8 +51,8 @@ export default function PostYou(post:Posts){
             </div>
             </div>
       
-            <div className='w-80 block sm:hidden -translate-x-2'>
-             <Video src={post.video} width={310} className='bg-gray-400 mb-2 flex flex-col w-40 md:w-32 h-60 rounded-xl p-1'
+            <div className='w-72 block sm:hidden -translate-x-2'>
+             <Video src={post.video} width={285} className='bg-gray-400 mb-2 flex flex-col w-40 md:w-32 h-60 rounded-xl p-1'
              />
         
               <div className='w-60 bg-relative relative bottom-40 -translate-y-2 -mb-40 h-40 rounded-xl'>

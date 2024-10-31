@@ -30,7 +30,7 @@ export default async function HomePage (){
         <section>
         <Navbar />
         <section className="min-h-screen text-base">
-          <div className="flex p-3 flex-row gap-96 ">
+          <div className="flex p-3 flex-row sm:gap-96 ">
             <div className="hidden sm:block">
             <SideHomepage />
             </div>

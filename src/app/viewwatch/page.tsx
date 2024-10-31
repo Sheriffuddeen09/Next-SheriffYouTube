@@ -7,7 +7,7 @@ export const revalidate = 1
 
 export default async function page() {
   return (
-    <section>
+    <section className="overflow-hidden">
     <Navbar />
     <section className="min-h-screen text-base">
     <div className="flex px-4 py-3 flex-row gap-10 ">
