@@ -129,14 +129,14 @@ return(
            />
        </span>
        <div>
-      <div className='inline-flex gap-2'>
-       <p className='sm:text-xl text-sm font-bold w-10/12'>
+       <div className='inline-flex gap-2'>
+       <p className='sm:text-xl text-sm font-bold'>
           {post.title}
       </p>
       </div>
       <div className="flex-col flex sm:flex-row mb-20 gap-14 items-center mt-4">
         <div className="inline-flex gap-3 items-center">
-      <span className="-translate-x-10">
+      <span className="sm:translate-x-0 -translate-x-10">
       <p className='text-sm text-gray-400'>{post.views}</p>
       <p className='text-sm text-gray-400 w-40'>{post.date}</p>
       </span>

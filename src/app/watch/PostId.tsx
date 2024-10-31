@@ -135,7 +135,7 @@ return(
       </p>
       </div>
       <div className="flex-col flex sm:flex-row mb-0 gap-14 items-center mt-4">
-        <div className="inline-flex gap-4 items-center  -translate-x-7">
+        <div className="inline-flex gap-4 items-center sm:translate-x-0  -translate-x-7">
       <span>
       <p className='text-sm text-gray-400 w-40'>{post.views} subscribers</p>
       </span>

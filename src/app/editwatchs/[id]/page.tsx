@@ -24,17 +24,17 @@ export default async function page({ params: { id } }: Props) {
     <div className="underis">
     <Navbar />
     </div>
-        <main className="lg:inline-flex -translate-y-4">
-        <div className="-translate-y-10 sm:translate-y-24">
+        <main className="lg:inline-flex -translate-y-2">
+        <div className="sm:-translate-y-0  -translate-y-32 ">
             <PostIds  {...post}  />
             <PostItem   />
             
         </div>
         <div>
-        <div className="sm:block hidden">
+        <div className="sm:block -translate-x-6 hidden">
         <PostIdSecond {...post}/>
         </div>
-        <div className="px-3">
+        <div className="px-3 -translate-x-8">
         <PostIdList />
         </div>
         </div>
