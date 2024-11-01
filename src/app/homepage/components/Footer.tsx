@@ -13,13 +13,17 @@ Home</Link>
   <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
 </svg>
 Shorts</p></Link>
+<Link href={'/subscribe'}>
                 <p className="text-white my-6 flex-col text-font items-center flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 border ">
   <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
 </svg>
 Subscriptions</p>
+</Link>
+<Link href={'/you'}>
 <div className="text-white -translate-y-2 flex-col text-font items-center flex">
 <p className="rounded-full w-10 p-2 font-bold bg-purple-400 text-center">O</p>
 <p>You</p></div>
+</Link>
                 </div>
         </section>
     )
