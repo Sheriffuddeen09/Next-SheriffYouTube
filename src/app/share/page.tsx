@@ -9,7 +9,7 @@ export default function Share(){
         <RWebShare
             data={{
                 text: "Web Share - GfG",
-                url: "http://localhost:3000",
+                url: "https://next-server-qb2r.onrender.com",
                 title: "GfG",
             }}
             onClick={() => console.log("shared successfully!")}
