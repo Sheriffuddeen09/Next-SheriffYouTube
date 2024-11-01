@@ -74,12 +74,14 @@ export default function Navbar () {
                 <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
               </svg>
               </p>
+              <Link href={'/'}>
               <p className="rounded-2xl p-2 transition-all duration-500 ease-in-out hover:bg-[#1a222f]">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-5 rounded-2xl transition-all duration-500 ease-in-out hover:bg-[#1a222f] cursor-pointer hidden sm:block" onClick={handlemenu}>
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
               </p>
                  <h1 className="sm:translate-x-3 -translate-x-8">Sherifftube</h1>
+                </Link>
                     <div className="block sm:hidden inline-flex gap-0 items-center translate-x-3">
                 <div className="hidden sm:block">
                 <p className="rounded-2xl p-2 transition-all inline-flex duration-500 ease-in-out hover:bg-[#1a222f]" onClick={handleNavbar}>
