@@ -51,7 +51,7 @@ export default async function PostIdList (){
     
     return (
         <section className="sm:translate-x-0 -translate-x-3">
-        <div className="-mt-10 sm:mt-28">
+        <div className="-mt-10 sm:mt-28 translate-x-2">
              {button}
          </div>
          <div className="sm:mt-16 mt-8">

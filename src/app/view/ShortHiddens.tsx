@@ -16,7 +16,7 @@ return(
   <div className=''>
     <Video src={post.video} width={240} height={400} 
     className='rounded-xl hidden sm:block rounded-xl -translate-y-5'/>
-    <Video src={post.video} width={285} height={450} 
+    <Video src={post.video} width={290} height={450} 
     className='rounded-xl block sm:hidden -translate-y-5'/>
         <div className=' mt-1'>
         <p className='font-bold text-sm inline-flex gap-5'>{post.title} <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 cursor-pointers" onClick={handleIcon}>

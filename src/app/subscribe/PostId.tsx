@@ -123,7 +123,7 @@ return(
            <Video src={post.video} width={730} className='bg-gray-50 w-96 mb-2 h-96 rounded-xl hidden sm:block'
            />
        </span>
-       <span className='w-72'>
+       <span className='block sm:hidden' style={{width:'297px'}}>
            <Video src={post.video} width={290} className='bg-gray-50 w-52 mb-2 h-72 rounded-xl sm:hidden block'
            />
        </span>
